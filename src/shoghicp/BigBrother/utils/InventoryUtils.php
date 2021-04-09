@@ -265,7 +265,7 @@ class InventoryUtils{
 				$title = "repair";
 			break;
 			default://TODO: http://wiki.vg/Inventory#Windows
-				echo "[InventoryUtils] ContainerOpenPacket: ".$packet->type."\n";
+				//echo "[InventoryUtils] ContainerOpenPacket: ".$packet->type."\n";
 
 				$pk = new ContainerClosePacket();
 				$pk->windowId = $packet->windowId;
