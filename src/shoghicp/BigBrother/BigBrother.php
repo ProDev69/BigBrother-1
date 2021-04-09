@@ -252,7 +252,7 @@ class BigBrother extends PluginBase implements Listener{
 
 	/**
 	 * @param string $username
-	 * @param array profile
+	 * @param array $profile
 	 */
 	public function setProfileCache(string $username, array $profile) : void{
 		$this->profileCache[$username] = [
