@@ -701,7 +701,7 @@ class ConvertUtils{
 					//Unused
 				break;
 				default:
-					echo "key: ".$bottom." Not implemented\n";
+					//echo "key: ".$bottom." Not implemented\n";
 				break;
 				//TODO: add data type
 			}
