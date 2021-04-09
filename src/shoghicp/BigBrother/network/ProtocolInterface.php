@@ -176,7 +176,7 @@ class ProtocolInterface implements SourceInterface{
 		if(DEBUG > 4){
 			$id = bin2hex(chr($packet->pid()));
 			if($id !== "1f"){
-				echo "[Send][Interface] 0x".bin2hex(chr($packet->pid()))."\n";
+				//echo "[Send][Interface] 0x".bin2hex(chr($packet->pid()))."\n";
 			}
 		}
 
