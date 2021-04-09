@@ -73,7 +73,7 @@ class PNGParser{
 	private function read(){
 		if($this->stream->get(8) !== self::PNGFileSignature){
 			$this->stream->reset();
-			echo "Error\n";
+			//echo "Error\n";
 			return;
 		}
 
