@@ -220,7 +220,7 @@ class Translator{
 						$player->putRawPacket($pk);
 					break;
 					default:
-						echo "ClientStatusPacket: ".$packet->actionID."\n";
+						//echo "ClientStatusPacket: ".$packet->actionID."\n";
 					break;
 				}
 				return null;
