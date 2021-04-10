@@ -343,7 +343,7 @@ class Translator{
 
 						return $packets;
 					default:
-						echo "PluginChannel: ".$packet->channel."\n";
+						//echo "PluginChannel: ".$packet->channel."\n";
 					break;
 				}
 				return null;
