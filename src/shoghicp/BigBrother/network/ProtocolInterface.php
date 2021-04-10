@@ -273,7 +273,7 @@ class ProtocolInterface implements SourceInterface{
 		if(DEBUG > 4){
 			$id = bin2hex(chr(ord($payload[0])));
 			if($id !== "0b"){//KeepAlivePacket
-				echo "[Receive][Interface] 0x".bin2hex(chr(ord($payload[0])))."\n";
+				//echo "[Receive][Interface] 0x".bin2hex(chr(ord($payload[0])))."\n";
 			}
 		}
 
