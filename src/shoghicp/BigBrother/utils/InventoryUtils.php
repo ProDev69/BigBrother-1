@@ -436,7 +436,7 @@ class InventoryUtils{
 						$packets[] = $pk;
 					break;
 					default:
-						echo "[InventoryUtils] ContainerSetDataPacket: 0x".bin2hex(chr($packet->windowId))."\n";
+						//echo "[InventoryUtils] ContainerSetDataPacket: 0x".bin2hex(chr($packet->windowId))."\n";
 					break;
 				}
 			break;
