@@ -1,5 +1,7 @@
 <?php
+namespace shoghicp\BigBrother\utils;
 
+use pocketmine\item\Item;
 class ComputerItem extends Item{
 	/**
 	 * @param int                $id
