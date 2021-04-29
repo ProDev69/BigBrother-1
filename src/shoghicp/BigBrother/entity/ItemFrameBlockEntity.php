@@ -137,7 +137,7 @@ class ItemFrameBlockEntity extends Position{
 		$tile = $this->getLevel()->getTile($this);
 		if($tile instanceof ItemFrame){
 			$item = $tile->hasItem() ? $tile->getItem() : Item::get(Item::AIR, 0, 0);
-
+/*
 			if($item->getId() === Item::FILLED_MAP){
 				$mapId = $item->getNamedTag()->getLong("map_uuid");
 				if($mapId !== null){
@@ -149,7 +149,7 @@ class ItemFrameBlockEntity extends Position{
 					$player->handleDataPacket($req);
 				}
 			}
-
+*/
 			ConvertUtils::convertItemData(true, $item);
 			$pk->metadata[6] = [5, $item];
 			$pk->metadata[7] = [1, $tile->getItemRotation()];
