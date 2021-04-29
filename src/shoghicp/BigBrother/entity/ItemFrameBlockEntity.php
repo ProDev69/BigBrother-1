@@ -123,7 +123,7 @@ class ItemFrameBlockEntity extends Position{
 		$pk->z = $this->z;
 		$pk->yaw = $this->yaw;
 		$pk->pitch = 0;
-		$pk->data = self::$mapping[$this->facing][1];
+		$pk->data = self::$mapping[(intval($this->facing) - 1)][1];
 		$pk->sendVelocity = true;
 		$pk->velocityX = 0;
 		$pk->velocityY = 0;
