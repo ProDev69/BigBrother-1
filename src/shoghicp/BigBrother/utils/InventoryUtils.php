@@ -1159,7 +1159,7 @@ class InventoryUtils{
 				}
 			}else{
 				if(DEBUG > 3){
-					echo "[Action Number #".$actionNumber."][Window Name: ".$windowName."] invalid Item!\n";
+					//echo "[Action Number #".$actionNumber."][Window Name: ".$windowName."] invalid Item!\n";
 					if($action instanceof SlotChangeAction){
 						$checkItem = $action->getInventory()->getItem($action->getSlot());
 						var_dump(["checkItem" => $checkItem, "sourceItem" => $action->getSourceItem()]);//json_encode
