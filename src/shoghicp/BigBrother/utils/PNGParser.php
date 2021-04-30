@@ -155,8 +155,8 @@ class PNGParser{
 				}
 			break;
 			default:
-				echo "Sorry, i can't parse png file. readtRNS: ".$this->colorType."\n";
-				echo "Report to BigBrotherTeam!\n";
+				//echo "Sorry, i can't parse png file. readtRNS: ".$this->colorType."\n";
+				//echo "Report to BigBrotherTeam!\n";
 			break;
 		}
 	}
