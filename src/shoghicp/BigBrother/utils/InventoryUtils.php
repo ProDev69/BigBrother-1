@@ -693,13 +693,13 @@ class InventoryUtils{
 
 					break;
 					case 4://Starting right mouse drag
-						echo "start\n";
+						//echo "start\n";
 					break;
 					case 5://Add slot for right-mouse drag
-						echo "add slot\n";
+						//echo "add slot\n";
 					break;
 					case 6://Ending right mouse drag
-						echo "end\n";
+						//echo "end\n";
 					break;
 					case 8://Starting middle mouse drag
 
