@@ -418,7 +418,7 @@ class Translator{
 							$pk->trData->actionType = InventoryTransactionPacket::USE_ITEM_ON_ENTITY_ACTION_ATTACK;
 						break;
 						default:
-							echo "[Translator] UseItemPacket\n";
+							//echo "[Translator] UseItemPacket\n";
 							return null;
 					}
 				}
@@ -669,7 +669,7 @@ class Translator{
 
 							return $packets;
 						}else{
-							echo "PlayerDiggingPacket: ".$packet->status."\n";
+							//echo "PlayerDiggingPacket: ".$packet->status."\n";
 						}
 					break;
 					case 3:
@@ -732,7 +732,7 @@ class Translator{
 
 						return $pk;
 					default:
-						echo "PlayerDiggingPacket: ".$packet->status."\n";
+						//echo "PlayerDiggingPacket: ".$packet->status."\n";
 					break;
 				}
 
@@ -769,7 +769,7 @@ class Translator{
 
 						return $pk;
 					default:
-						echo "EntityActionPacket: ".$packet->actionID."\n";
+						//echo "EntityActionPacket: ".$packet->actionID."\n";
 					break;
 				}
 
@@ -908,7 +908,7 @@ class Translator{
 
 			default:
 				if(DEBUG > 4){
-					echo "[Receive][Translator] 0x".bin2hex(chr($packet->pid()))." Not implemented\n";
+					//echo "[Receive][Translator] 0x".bin2hex(chr($packet->pid()))." Not implemented\n";
 				}
 				return null;
 		}
@@ -1689,7 +1689,7 @@ class Translator{
 						return null;
 					default:
 						if(DEBUG > 3){
-							echo "LevelSoundEventPacket: ".$packet->sound."\n";
+							//echo "LevelSoundEventPacket: ".$packet->sound."\n";
 						}
 						return null;
 				}
@@ -1719,7 +1719,7 @@ class Translator{
 				$id = 0;
 
 				switch($packet->evid){
-					case LevelEventPacket::EVENT_SOUND_IGNITE:
+				case LevelEventPacket::EVENT_SOUND_IGNITE:
 						$isSoundEffect = true;
 						$name = "entity.tnt.primed";
 					break;
@@ -1749,7 +1749,7 @@ class Translator{
 								$name = "entity.snowball.throw";
 
 								if(DEBUG > 3){
-									echo "LevelEventPacket: ".$id."\n";
+									//echo "LevelEventPacket: ".$id."\n";
 								}
 							break;
 						}
@@ -1806,7 +1806,7 @@ class Translator{
 								}
 							break;
 							default:
-								echo "[LevelEventPacket] Unknown DoorSound\n";
+								//echo "[LevelEventPacket] Unknown DoorSound\n";
 								return null;
 						}
 					break;
@@ -1870,7 +1870,7 @@ class Translator{
 							$packet->evid ^= LevelEventPacket::EVENT_ADD_PARTICLE_MASK;
 						}
 
-						echo "LevelEventPacket: ".$packet->evid."\n";
+						//echo "LevelEventPacket: ".$packet->evid."\n";
 						return null;
 				}
 
@@ -1961,7 +1961,7 @@ class Translator{
 
 						return $pk;
 					default:
-						echo "SetTitlePacket: ".$packet->type."\n";
+						//echo "SetTitlePacket: ".$packet->type."\n";
 					break;
 				}
 
@@ -2017,7 +2017,7 @@ class Translator{
 					break;
 					default:
 						if(DEBUG > 3){
-							echo "EntityEventPacket: ".$packet->event."\n";
+							//echo "EntityEventPacket: ".$packet->event."\n";
 						}
 					break;
 				}
@@ -2049,7 +2049,7 @@ class Translator{
 
 						return $pk;
 					default:
-						echo "MobEffectPacket: ".$packet->eventId."\n";
+						//echo "MobEffectPacket: ".$packet->eventId."\n";
 					break;
 				}
 
@@ -2135,7 +2135,7 @@ class Translator{
 							];
 						break;
 						default:
-							echo "UpdateAtteributesPacket: ".$entry->getName()."\n";
+							//echo "UpdateAtteributesPacket: ".$entry->getName()."\n";
 						break;
 					}
 				}
@@ -2258,7 +2258,7 @@ class Translator{
 						$pk->eid = $packet->entityRuntimeId;
 						return $pk;
 					default:
-						echo "AnimatePacket: ".$packet->action."\n";
+						//echo "AnimatePacket: ".$packet->action."\n";
 					break;
 				}
 				return null;
@@ -2333,7 +2333,7 @@ class Translator{
 						$pk->namedtag = $nbt;
 					break;
 					default:
-						echo "BlockEntityDataPacket: ".$nbt["id"]."\n";
+						//echo "BlockEntityDataPacket: ".$nbt["id"]."\n";
 						return null;
 				}
 
@@ -2547,7 +2547,7 @@ class Translator{
 
 						return $pk;
 					default:
-						echo "BossEventPacket: ".$packet->eventType."\n";
+						//echo "BossEventPacket: ".$packet->eventType."\n";
 					break;
 				}
 				return null;
@@ -2590,7 +2590,7 @@ class Translator{
 
 			default:
 				if(DEBUG > 4){
-					echo "[Send][Translator] 0x".bin2hex(chr($packet->pid()))." Not implemented\n";
+					//echo "[Send][Translator] 0x".bin2hex(chr($packet->pid()))." Not implemented\n";
 				}
 				return null;
 		}
