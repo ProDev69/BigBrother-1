@@ -1348,7 +1348,7 @@ class Translator{
 					break;*/
 					default:
 						$packet->type = 57;
-						echo "AddEntityPacket: ".$packet->entityRuntimeId."\n";
+						//echo "AddEntityPacket: ".$packet->entityRuntimeId."\n";
 					break;
 				}
 
