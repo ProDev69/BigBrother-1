@@ -266,8 +266,8 @@ class PNGParser{
 			case 16:
 				return $stream->getShort();
 			default:
-				echo "Sorry, i can't parse png file. getData: ".$this->bitDepth."\n";
-				echo "Report to BigBrotherTeam!\n";
+				//echo "Sorry, i can't parse png file. getData: ".$this->bitDepth."\n";
+				//echo "Report to BigBrotherTeam!\n";
 			break;
 		}
 
