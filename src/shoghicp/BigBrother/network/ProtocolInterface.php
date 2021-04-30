@@ -370,7 +370,7 @@ class ProtocolInterface implements SourceInterface{
 					break;
 				default:
 					if(DEBUG > 4){
-						echo "[Receive][Interface] 0x".bin2hex(chr($pid))." Not implemented\n"; //Debug
+						//echo "[Receive][Interface] 0x".bin2hex(chr($pid))." Not implemented\n"; //Debug
 					}
 					return;
 			}
